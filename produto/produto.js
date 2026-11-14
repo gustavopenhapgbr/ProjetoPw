@@ -1,8 +1,8 @@
 // Preenche o catálogo e filtra os produtos pelo termo enviado na busca.
 
-// Remove acentos e diferenças de maiúsculas para comparar textos de forma uniforme.
-function normalizarTexto(texto) { // Prepara um texto para buscas sem acentos e sem diferença entre maiúsculas e minúsculas.
-  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); // Separa e remove acentos e converte as letras para minúsculas.
+// Converte o texto para minúsculas para facilitar a comparação.
+function normalizarTexto(texto) { // Evita diferenças entre letras maiúsculas e minúsculas.
+  return texto.toLowerCase(); // Converte todas as letras para minúsculas.
 } // Fecha a função de normalização.
 
 // Lê e normaliza o termo informado no parâmetro "busca" da URL.

@@ -48,6 +48,11 @@ function selecionarTamanho(tamanho) { // Marca uma opção e guarda o tamanho es
 // Função responsável por adicionar o produto ao carrinho.
 function adicionarCarrinho() { // Adiciona o produto selecionado ao armazenamento do carrinho.
 
+       if (!localStorage.getItem("usuarioLogado")) {
+        alert("Faça login ou crie uma conta para adicionar produtos ao carrinho.");
+        window.location.href = "../login/login.html";
+        return;
+    }
     if (tamanhoEscolhido === "") { // Confere se o cliente escolheu um tamanho.
         alert("Selecione um tamanho antes de adicionar ao carrinho."); // Explica o que falta fazer.
         return; // Interrompe a inclusão sem tamanho escolhido.

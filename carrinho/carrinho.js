@@ -35,6 +35,10 @@ function agruparItens(carrinho) { // Consolida produtos iguais sem misturar tama
 
 function mostrarCarrinho() { // Monta a tela e recalcula os valores do carrinho.
     // Lê os itens do carrinho salvos no navegador.
+    if (!localStorage.getItem("usuarioLogado")) {
+    alert("Faça login ou crie uma conta para acessar o carrinho.");
+    window.location.href = "../login/login.html";
+}
     var carrinhoSalvo = localStorage.getItem("carrinho"); // Lê o texto do carrinho armazenado.
     var carrinho = JSON.parse(carrinhoSalvo) || []; // Converte o texto em lista ou cria uma lista vazia.
     carrinho = agruparItens(carrinho); // Junta duplicados antes de exibir os itens.

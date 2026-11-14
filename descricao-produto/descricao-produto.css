@@ -1,0 +1,92 @@
+.conteudo-principal {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  flex: 1;
+  padding: 35px 20px 65px;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 13px;
+}
+
+.produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 45px;
+}
+
+.foto {
+  width: 100%;
+  max-height: 520px;
+  background: #eee;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.detalhes .categoria {
+  color: #42146d;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.detalhes h1 {
+  margin: 12px 0;
+  font-size: 32px;
+}
+
+.detalhes .preco {
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detalhes > p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.detalhes h2 {
+  margin: 24px 0 12px;
+  font-size: 17px;
+}
+
+.detalhes hr {
+  margin: 22px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.tamanhos {
+  display: flex;
+  gap: 10px;
+}
+
+.tamanhos span {
+  min-width: 42px;
+  padding: 10px;
+  border: 1px solid #999;
+  text-align: center;
+}
+
+.botao {
+  display: block;
+  margin: 22px 0;
+  padding: 14px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .produto {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .foto {
+    max-height: 360px;
+  }
+}

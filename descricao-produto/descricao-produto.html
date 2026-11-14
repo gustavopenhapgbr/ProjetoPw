@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F.Company | Produto</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="descricao-produto.css">
+  </head>
+
+  <body>
+    <div class="topo">
+      <a class="marca" href="../home/index.html">
+        F.Company
+      </a>
+
+      <form class="busca" action="../produto/produto.html">
+        <input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
+        <button type="submit" aria-label="Pesquisar">⌕</button>
+      </form>
+
+      <div class="opcoes">
+        <a class="fale-conosco" href="../home/index.html#contato">
+          <img src="../imagens/faleConosco.jpg" alt="">Fale Conosco
+        </a>
+
+        <a href="../carrinho/carrinho.html" aria-label="Carrinho">
+          <img class="icone" src="../imagens/carrinho.png" alt="">
+        </a>
+
+        <a href="../login/login.html" aria-label="Minha conta">
+          <img class="icone" src="../imagens/usuario.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="../home/index.html">Início</a>
+      <a href="../categoria/categoria.html">Categorias</a>
+      <a href="../produto/produto.html">Produtos</a>
+    </nav>
+
+    <div class="conteudo-principal">
+      <a class="voltar" href="../produto/produto.html">
+        ← Voltar aos produtos
+      </a>
+
+      <div class="produto">
+        <img id="produto-imagem" class="foto" alt="">
+
+        <div class="detalhes">
+          <p id="produto-categoria" class="categoria"></p>
+
+          <h1 id="produto-nome"></h1>
+
+          <p id="produto-preco" class="preco"></p>
+
+          <p id="produto-resumo"></p>
+          <h2>Tamanho</h2>
+
+          <div class="tamanhos">
+    <span onclick="selecionarTamanho(this)">P</span>
+    <span onclick="selecionarTamanho(this)">M</span>
+    <span onclick="selecionarTamanho(this)">G</span>
+    <span onclick="selecionarTamanho(this)">GG</span>
+</div>
+
+          <button class="botao" type="button" onclick="adicionarCarrinho()">
+    Adicionar ao carrinho
+</button>
+
+          <hr>
+
+          <h2>Descrição do produto</h2>
+
+          <p id="produto-descricao"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape" id="contato">
+      <div class="rodape-coluna-esquerda">
+        <div class="rodape-logo">F.Company</div>
+
+        <p>
+          F.Company é atualmente a maior rede streetwear nacional, onde você não se limita, abuse do seu estilo.
+        </p>
+
+        <div class="rodape-contato">
+          <img src="../imagens/telefone.png" alt="Telefone fixo">
+          <div>
+            <span>Telefone fixo</span>
+            <strong>4002-8922</strong>
+          </div>
+        </div>
+
+        <div class="rodape-contato">
+          <img src="../imagens/whatsapp.png" alt="Whatsapp">
+          <div>
+            <span>Whatsapp</span>
+            <strong>1234-5678</strong>
+          </div>
+        </div>
+
+        <div class="rodape-redes-sociais">
+          <p>Nos siga nas redes sociais</p>
+
+          <div class="rodape-icones-redes">
+            <a href="#contato" aria-label="Instagram">
+              <img src="../imagens/instagram.png" alt="">
+            </a>
+
+            <a href="#contato" aria-label="Facebook">
+              <img src="../imagens/facebook.png" alt="">
+            </a>
+
+            <a href="#contato" aria-label="TikTok">
+              <img src="../imagens/tiktok.png" alt="">
+            </a>
+
+            <a href="#contato" aria-label="Twitter">
+              <img src="../imagens/twitter.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape-coluna-direita">
+        <h3>Clube F.Company</h3>
+
+        <p>
+          Cadastre-se e seja o primeiro(a) a ser notificado sobre nossas promoções e novidades. Estilo e Liberdade para você!
+        </p>
+
+        <form class="newsletter-form">
+          <label class="sr-only" for="email">
+            Digite seu e-mail
+          </label>
+
+          <input id="email" type="email" placeholder="Digite seu e-mail">
+
+          <button type="submit">ASSINAR</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../produtos.js"></script>
+    <script src="descricao-produto.js"></script>
+  </body>
+</html>

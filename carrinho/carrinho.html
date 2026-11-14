@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F.Company | Carrinho</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="carrinho.css">
+  </head>
+  <body>
+    <div class="topo">
+      <a class="marca" href="../home/index.html">
+        F.Company
+      </a>
+
+      <form class="busca" action="../produto/produto.html">
+        <input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
+        <button type="submit" aria-label="Pesquisar">⌕</button>
+      </form>
+
+      <div class="opcoes">
+        <a class="fale-conosco" href="../home/index.html#contato">
+          <img src="../imagens/faleConosco.jpg" alt="">Fale Conosco
+        </a>
+        <a href="carrinho.html" aria-label="Carrinho">
+          <img class="icone" src="../imagens/carrinho.png" alt="">
+        </a>
+        <a href="../login/login.html" aria-label="Minha conta">
+          <img class="icone" src="../imagens/usuario.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="../home/index.html">Início</a>
+      <a href="../categoria/categoria.html">Categorias</a>
+      <a href="../produto/produto.html">Produtos</a>
+    </nav>
+
+    <div class="conteudo-principal">
+      <h1>Meu carrinho</h1>
+
+      <div class="conteudo">
+        <div>
+          <div id="lista-produtos"></div>
+
+          <p id="carrinho-vazio" class="carrinho-vazio">
+            Seu carrinho está vazio.
+          </p>
+        </div>
+
+        <aside class="resumo">
+          <h2>Resumo do pedido</h2>
+
+          <p>
+            <span>Quantidade</span>
+            <span id="quantidade-itens">0 produtos</span>
+          </p>
+
+          <p>
+            <span>Subtotal</span>
+            <span id="subtotal">R$ 0,00</span>
+          </p>
+
+          <p>
+            <span>Frete</span>
+            <span>Grátis</span>
+          </p>
+
+          <hr>
+
+          <p class="total">
+            <strong>Total</strong>
+            <strong id="total">R$ 0,00</strong>
+          </p>
+
+          <button class="botao" type="button" onclick="limparCarrinho()">
+            Limpar carrinho
+          </button>
+
+          <a class="botao" href="../home/index.html">
+            Finalizar compra
+          </a>
+        </aside>
+      </div>
+    </div>
+
+    <div class="rodape" id="contato">
+      <div class="rodape-coluna-esquerda">
+        <div class="rodape-logo">F.Company</div>
+
+        <p>
+          F.Company é atualmente a maior rede streetwear nacional, onde você não se limita, abuse do seu estilo.
+        </p>
+
+        <div class="rodape-contato">
+          <img src="../imagens/telefone.png" alt="Telefone fixo">
+          <div>
+            <span>Telefone fixo</span>
+            <strong>4002-8922</strong>
+          </div>
+        </div>
+
+        <div class="rodape-contato">
+          <img src="../imagens/whatsapp.png" alt="Whatsapp">
+          <div>
+            <span>Whatsapp</span>
+            <strong>1234-5678</strong>
+          </div>
+        </div>
+
+        <div class="rodape-redes-sociais">
+          <p>Nos siga nas redes sociais</p>
+
+          <div class="rodape-icones-redes">
+            <a href="#contato" aria-label="Instagram">
+              <img src="../imagens/instagram.png" alt="">
+            </a>
+            <a href="#contato" aria-label="Facebook">
+              <img src="../imagens/facebook.png" alt="">
+            </a>
+            <a href="#contato" aria-label="TikTok">
+              <img src="../imagens/tiktok.png" alt="">
+            </a>
+            <a href="#contato" aria-label="Twitter">
+              <img src="../imagens/twitter.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape-coluna-direita">
+        <h3>Clube F.Company</h3>
+
+        <p>
+          Cadastre-se e seja o primeiro(a) a ser notificado sobre nossas promoções e novidades. Estilo e Liberdade para você!
+        </p>
+
+        <form class="newsletter-form">
+          <label class="sr-only" for="email">
+            Digite seu e-mail
+          </label>
+          <input id="email" type="email" placeholder="Digite seu e-mail">
+          <button type="submit">ASSINAR</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="carrinho.js"></script>
+  </body>
+</html>

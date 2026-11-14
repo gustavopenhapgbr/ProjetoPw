@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    F.Company | Entrar
+  </title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="topo">
+
+    <a class="marca" href="../home/index.html">
+      F.Company
+    </a>
+
+    <form class="busca" action="../produto/produto.html">
+      <input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
+      <button type="submit" aria-label="Pesquisar">
+        ⌕
+      </button>
+    </form>
+
+    <div class="opcoes">
+      <a class="fale-conosco" href="../home/index.html#contato">
+        <img src="../imagens/faleConosco.jpg" alt="">Fale Conosco
+      </a>
+      <a href="../carrinho/carrinho.html" aria-label="Carrinho">
+        <img class="icone" src="../imagens/carrinho.png" alt="">
+      </a>
+      <a href="login.html" aria-label="Minha conta">
+        <img class="icone" src="../imagens/usuario.png" alt="">
+      </a>
+    </div>
+
+  </div>
+
+  <nav class="menu">
+    <a href="../home/index.html">
+      Início
+    </a>
+    <a href="../categoria/categoria.html">
+      Categorias
+    </a>
+    <a href="../produto/produto.html">
+      Produtos
+    </a>
+  </nav>
+
+  <div class="conteudo-principal">
+    <form class="formulario">
+
+      <img class="mascote" src="../imagens/guaxinim.png" alt="">
+      <h1>
+        Bem-vindo à<br>F.Company
+      </h1>
+      <p class="introducao">
+        Entre para continuar comprando
+      </p>
+
+      <label for="email">
+        E-mail
+      </label>
+      <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+
+      <div class="linha-senha">
+        <label for="senha">
+          Senha
+        </label>
+        <a href="#senha">
+          Esqueceu a senha?
+        </a>
+      </div>
+      <input id="senha" name="senha" type="password" placeholder="Sua senha" required>
+
+      <button class="botao" type="submit" id="btn-login">
+        Entrar
+      </button>
+
+      <p class="cadastro">
+        Não tem conta?
+        <a href="../cadastro/cadastro.html">
+          Criar conta
+        </a>
+      </p>
+
+    </form>
+  </div>
+
+  <div class="rodape" id="contato">
+
+    <div class="rodape-coluna-esquerda">
+
+      <div class="rodape-logo">
+        F.Company
+      </div>
+      <p>
+        F.Company é atualmente a maior rede streetwear nacional, onde você não se limita, abuse do seu estilo.
+      </p>
+
+      <div class="rodape-contato">
+        <img src="../imagens/telefone.png" alt="Telefone fixo">
+        <div>
+          <span>Telefone fixo</span><strong>4002-8922</strong>
+        </div>
+      </div>
+
+      <div class="rodape-contato">
+        <img src="../imagens/whatsapp.png" alt="WhatsApp">
+        <div>
+          <span>Whatsapp</span><strong>1234-5678</strong>
+        </div>
+      </div>
+
+      <div class="rodape-redes-sociais">
+        <p>
+          Nos siga nas redes sociais
+        </p>
+        <div class="rodape-icones-redes">
+          <a href="#contato" aria-label="Instagram">
+            <img src="../imagens/instagram.png" alt="">
+          </a>
+          <a href="#contato" aria-label="Facebook">
+            <img src="../imagens/facebook.png" alt="">
+          </a>
+          <a href="#contato" aria-label="TikTok">
+            <img src="../imagens/tiktok.png" alt="">
+          </a>
+          <a href="#contato" aria-label="Twitter">
+            <img src="../imagens/twitter.png" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rodape-coluna-direita">
+      <h3>
+        Clube F.Company
+      </h3>
+      <p>
+        Cadastre-se e seja o primeiro(a) a ser notificado sobre nossas promoções e novidades. Estilo e Liberdade para
+        você!
+      </p>
+      <form class="newsletter-form">
+        <label class="sr-only" for="newsletter-email">
+          Digite seu e-mail
+        </label>
+        <input id="newsletter-email" type="email" placeholder="Digite seu e-mail">
+        <button type="submit">
+          ASSINAR
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="login.js"></script>
+
+</body>
+
+</html>

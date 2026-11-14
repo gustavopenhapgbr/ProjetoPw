@@ -1,0 +1,98 @@
+.conteudo-principal {
+  display: grid;
+  place-items: center;
+  flex: 1;
+  padding: 42px 16px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 28px;
+  background: #423a3a;
+  color: #eee;
+  border: 1px solid #42146d;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(191, 6, 207, 0.35);
+}
+
+.mascote {
+  width: 110px;
+  height: 90px;
+  margin: 0 auto 12px;
+}
+
+.formulario h1,
+.introducao,
+.cadastro {
+  text-align: center;
+}
+
+.formulario h1 {
+  font-size: 22px;
+}
+
+.introducao {
+  margin: 6px 0 24px;
+  font-size: 14px;
+}
+
+.formulario label {
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.formulario input {
+  height: 44px;
+  margin-bottom: 18px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.formulario input:focus {
+  border-color: #42146d;
+  box-shadow: 0 0 0 3px rgba(66, 20, 109, 0.25);
+}
+
+.linha-senha {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.linha-senha a {
+  color: #eee;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.botao {
+  height: 46px;
+  border: 0;
+  border-radius: 8px;
+  background: #42146d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.botao:hover {
+  background: #5b397a;
+}
+
+.cadastro {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.cadastro a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}

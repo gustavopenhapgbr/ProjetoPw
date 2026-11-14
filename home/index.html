@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    F.Company | Início
+  </title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <div class="topo">
+
+    <a class="marca" href="index.html">
+      F.Company
+    </a>
+
+    <form class="busca" action="../produto/produto.html">
+      <input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
+      <button type="submit" aria-label="Pesquisar">
+        ⌕
+      </button>
+    </form>
+
+    <div class="opcoes">
+      <a class="fale-conosco" href="#contato">
+        <img src="../imagens/faleConosco.jpg" alt="">Fale Conosco
+      </a>
+      <a href="../carrinho/carrinho.html" aria-label="Carrinho">
+        <img class="icone" src="../imagens/carrinho.png" alt="">
+      </a>
+      <div class="menu-usuario">
+        <a href="../login/login.html" aria-label="Minha conta">
+          <img class="icone" src="../imagens/usuario.png" alt="">
+        </a>
+        <div class="dropdown-usuario" id="dropdown-usuario"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <nav class="menu">
+    <a href="index.html">
+      Início
+    </a>
+    <a href="../categoria/categoria.html">
+      Categorias
+    </a>
+    <a href="../produto/produto.html">
+      Produtos
+    </a>
+  </nav>
+
+
+  <div class="conteudo-principal">
+
+    <div class="banner">
+      <img src="../imagens/banner%20site.jpg" alt="Banner F.Company">
+    </div>
+
+    <div class="beneficios">
+      <div>
+        <img src="../imagens/retorno.png" alt="">
+        <p>
+          Troca sem custo
+        </p>
+      </div>
+      <div>
+        <img src="../imagens/caminhao.png" alt="">
+        <p>
+          Frete grátis
+        </p>
+      </div>
+      <div>
+        <img src="../imagens/desconto.png" alt="">
+        <p>
+          ATÉ 20%
+        </p>
+      </div>
+    </div>
+
+    <div class="faixa">
+      <img src="../imagens/guaxinim.png" alt=""><span>MELHORE SEU ESTILO</span><img src="../imagens/guaxinim.png"
+        alt=""><span>VOCÊ É UM ASTRO</span><img src="../imagens/guaxinim.png" alt=""><span>SEJA UM REAL TRAPPER</span>
+    </div>
+
+    <div class="destaques">
+      <h1>
+        Produtos em destaque
+      </h1>
+      <p class="subtitulo">
+        Selecionados a dedo.
+      </p>
+      <div class="grade"></div>
+      <a class="botao" href="../produto/produto.html">
+        Ver todos os produtos
+      </a>
+    </div>
+
+    <div class="depoimentos">
+      <h2>
+        DEPOIMENTOS DE CLIENTES SATISFEITOS
+      </h2>
+      <p>
+        Olha só o resultado de quem já comprou peças personalizadas com a F.Company!
+      </p>
+      <div class="avaliacoes">
+
+        <article>
+          <span>★★★★★</span>
+          <p>
+            “Melhor compra que já fiz, melhorou muito o meu estilo e aumentou minha confiança.”
+          </p>
+          <small>Victor Ferreira</small>
+        </article>
+
+        <article>
+          <span>★★★★★</span>
+          <p>
+            “O tecido é muito bom e sem dúvidas o caimento das roupas também.”
+          </p>
+          <small>Gustavo Penha</small>
+        </article>
+
+        <article>
+          <span>★★★★★</span>
+          <p>
+            “Comprei a calça azul e não me arrependi, além do tecido ser muito bom não faz bolinhas.”
+          </p>
+          <small>Kauã Carreiro</small>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="rodape" id="contato">
+
+    <div class="rodape-coluna-esquerda">
+
+      <div class="rodape-logo">
+        F.Company
+      </div>
+      <p>
+        F.Company é atualmente a maior rede streetwear nacional, onde você não se limita, abuse do seu estilo.
+      </p>
+
+      <div class="rodape-contato">
+        <img src="../imagens/telefone.png" alt="Telefone fixo">
+        <div>
+          <span>Telefone fixo</span><strong>4002-8922</strong>
+        </div>
+      </div>
+
+      <div class="rodape-contato">
+        <img src="../imagens/whatsapp.png" alt="Whatsapp">
+        <div>
+          <span>Whatsapp</span><strong>1234-5678</strong>
+        </div>
+      </div>
+
+      <div class="rodape-redes-sociais">
+        <p>
+          Nos siga nas redes sociais
+        </p>
+        <div class="rodape-icones-redes">
+          <a href="#contato" aria-label="Instagram">
+            <img src="../imagens/instagram.png" alt="">
+          </a>
+          <a href="#contato" aria-label="Facebook">
+            <img src="../imagens/facebook.png" alt="">
+          </a>
+          <a href="#contato" aria-label="TikTok">
+            <img src="../imagens/tiktok.png" alt="">
+          </a>
+          <a href="#contato" aria-label="Twitter">
+            <img src="../imagens/twitter.png" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rodape-coluna-direita">
+      <h3>
+        Clube F.Company
+      </h3>
+      <p>
+        Cadastre-se e seja o primeiro(a) a ser notificado sobre nossas promoções e novidades. Estilo e Liberdade para
+        você!
+      </p>
+      <form class="newsletter-form">
+        <label class="sr-only" for="email">
+          Digite seu e-mail
+        </label>
+        <input id="email" type="email" placeholder="Digite seu e-mail">
+        <button type="submit">
+          ASSINAR
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="../produtos.js"></script>
+  <script src="home.js"></script>
+  <script src="../usuario.js"></script>
+
+</body>
+
+</html>

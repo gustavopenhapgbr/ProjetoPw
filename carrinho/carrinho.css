@@ -1,122 +1,174 @@
+/* Define a largura, centralização e espaçamento da página do carrinho. */
 .conteudo-principal {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  flex: 1;
-  padding: 45px 20px 70px;
+  width: 100%; /* Ocupa toda a largura disponível. */
+  max-width: 1100px; /* Limita a largura em telas grandes. */
+  margin: 0 auto; /* Centraliza a área principal horizontalmente. */
+  flex: 1; /* Ocupa o espaço livre entre o cabeçalho e o rodapé. */
+  padding: 45px 20px 70px; /* Define espaçamento interno: topo, laterais e base. */
 }
 
+/* Estiliza o título principal da página do carrinho. */
 .conteudo-principal h1 {
-  margin-bottom: 28px;
-  color: #201927;
-  font-size: 34px;
+  margin-bottom: 28px; /* Afasta o título do conteúdo seguinte. */
+  color: #201927; /* Define a cor do título. */
+  font-size: 34px; /* Define o tamanho do título. */
 }
 
+/* Divide a página entre a lista de itens e o resumo da compra. */
 .conteudo {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: flex-start;
-  gap: 35px;
+  display: grid; /* Ativa o layout de grade para os itens e o resumo. */
+  grid-template-columns: 2fr 1fr; /* Dá duas partes da largura à lista e uma ao resumo. */
+  align-items: flex-start; /* Alinha as áreas pelo topo. */
+  gap: 35px; /* Define o espaço entre a lista e o resumo. */
 }
 
+/* Organiza cada item do carrinho em uma linha. */
 .item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 15px 0;
-  border-bottom: 1px solid #ddd;
+  display: flex; /* Coloca imagem e informações lado a lado. */
+  align-items: center; /* Alinha verticalmente imagem e informações. */
+  gap: 20px; /* Define o espaço entre imagem e informações. */
+  padding: 15px 0; /* Adiciona espaço vertical ao redor do item. */
+  border-bottom: 1px solid #ddd; /* Separa o item seguinte com uma linha fina. */
 }
 
+/* Define o tamanho e o recorte da imagem do item. */
 .item img {
-  width: 130px;
-  height: 130px;
-  background: #eee;
-  object-fit: cover;
+  width: 130px; /* Define a largura da imagem. */
+  height: 130px; /* Define a altura da imagem. */
+  background: #eee; /* Define um fundo cinza para a área da imagem. */
+  object-fit: cover; /* Preenche a área cortando o excesso sem distorcer a imagem. */
 }
 
+/* Estiliza o nome do produto no carrinho. */
 .item h2 {
-  margin-bottom: 12px;
-  font-size: 18px;
+  margin-bottom: 12px; /* Afasta o nome das informações seguintes. */
+  font-size: 18px; /* Define o tamanho do nome do produto. */
 }
 
+/* Estiliza os textos secundários de cada item. */
 .item p {
-  margin: 7px 0;
-  color: #666;
-  font-size: 13px;
+  margin: 7px 0; /* Adiciona espaço acima e abaixo de cada parágrafo. */
+  color: #666; /* Exibe o texto em cinza. */
+  font-size: 13px; /* Define o tamanho do texto secundário. */
 }
 
+.controle-quantidade {
+  display: flex; /* Mantém os controles de quantidade na mesma linha. */
+  align-items: center; /* Alinha os controles verticalmente. */
+  gap: 8px; /* Separa os botões do texto de quantidade. */
+  margin: 7px 0; /* Afasta os controles dos dados próximos do produto. */
+  color: #666; /* Exibe a quantidade em cinza. */
+  font-size: 13px; /* Define o tamanho do texto de quantidade. */
+}
+
+.ajustar-quantidade {
+  width: 28px; /* Define a largura dos botões de quantidade. */
+  height: 28px; /* Define a altura dos botões de quantidade. */
+  border: 1px solid #ccc; /* Delimita visualmente cada botão. */
+  border-radius: 4px; /* Arredonda levemente os cantos. */
+  background: #fff; /* Mantém o fundo dos controles branco. */
+  color: #42146d; /* Destaca os sinais em roxo. */
+  font-size: 16px; /* Torna os sinais de mais e menos legíveis. */
+  font-weight: bold; /* Destaca os sinais nos controles. */
+  cursor: pointer; /* Indica que o controle pode ser acionado. */
+}
+
+.ajustar-quantidade:hover:not(:disabled) {
+  background: #f2eaf8; /* Destaca o botão ativo ao passar o cursor. */
+}
+
+.ajustar-quantidade:disabled {
+  opacity: 0.45; /* Mostra visualmente que o botão está desativado. */
+  cursor: not-allowed; /* Indica que a ação não está disponível. */
+}
+
+/* Destaca o preço do item. */
 .item strong {
-  display: inline-block;
-  margin-top: 7px;
-  color: #42146d;
+  display: inline-block; /* Permite aplicar espaçamento sem ocupar a linha toda. */
+  margin-top: 7px; /* Afasta o preço do conteúdo acima. */
+  color: #42146d; /* Exibe o preço em roxo. */
 }
 
+/* Posiciona e estiliza o controle para remover o item. */
 .remover {
-  margin-left: auto;
-  color: #777;
-  font-size: 12px;
+  margin-left: auto; /* Empurra o controle para a extremidade direita do item. */
+  color: #777; /* Exibe o controle em cinza. */
+  font-size: 12px; /* Define o tamanho do texto do controle. */
 }
 
+/* Cria o painel visual do resumo da compra. */
 .resumo {
-  padding: 22px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: #fff;
+  padding: 22px; /* Adiciona espaço interno ao painel. */
+  border: 1px solid #ddd; /* Desenha uma borda cinza-clara. */
+  border-radius: 12px; /* Arredonda os cantos do painel. */
+  background: #fff; /* Define o fundo branco do painel. */
 }
 
+/* Estiliza o título do resumo. */
 .resumo h2 {
-  margin-bottom: 22px;
-  font-size: 20px;
+  margin-bottom: 22px; /* Afasta o título dos valores do resumo. */
+  font-size: 20px; /* Define o tamanho do título. */
 }
 
+/* Alinha cada rótulo e valor do resumo em extremidades opostas. */
 .resumo p {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
-  font-size: 14px;
+  display: flex; /* Coloca o rótulo e seu valor na mesma linha. */
+  justify-content: space-between; /* Separa rótulo e valor para os lados opostos. */
+  margin: 15px 0; /* Adiciona espaço vertical entre os valores. */
+  font-size: 14px; /* Define o tamanho do texto do resumo. */
 }
 
+/* Desenha o separador entre os valores e o total. */
 .resumo hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #ddd;
+  margin: 20px 0; /* Adiciona espaço acima e abaixo do separador. */
+  border: 0; /* Remove as bordas padrão do separador. */
+  border-top: 1px solid #ddd; /* Desenha uma linha superior fina e cinza-clara. */
 }
 
+/* Dá destaque ao valor total. */
 .resumo .total {
-  font-size: 17px;
+  font-size: 17px; /* Aumenta o tamanho do texto do total. */
 }
 
+/* Faz o botão do resumo ocupar a largura do painel. */
 .botao {
-  display: block;
-  margin-top: 22px;
-  padding: 13px;
-  text-align: center;
+  display: block; /* Faz o botão ocupar uma linha inteira. */
+  margin-top: 22px; /* Afasta o botão do total. */
+  padding: 13px; /* Adiciona espaço interno ao botão. */
+  text-align: center; /* Centraliza o texto do botão. */
 }
 
+/* Ajusta a disposição do carrinho para telas estreitas. */
 @media (max-width: 650px) {
+  /* Reduz o espaçamento da área principal em telas menores. */
   .conteudo-principal {
-    padding: 30px 15px;
+    padding: 30px 15px; /* Define espaçamento interno menor para celular. */
   }
 
+  /* Empilha a lista de itens e o resumo. */
   .conteudo {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Usa uma única coluna na grade. */
   }
 
+  /* Alinha o conteúdo do item ao topo e reduz a distância entre elementos. */
   .item {
-    align-items: flex-start;
-    gap: 12px;
+    align-items: flex-start; /* Alinha imagem e informações pelo topo. */
+    gap: 12px; /* Reduz o espaço entre imagem e informações. */
   }
 
+  /* Reduz a imagem do item em telas menores. */
   .item img {
-    width: 90px;
-    height: 90px;
+    width: 90px; /* Reduz a largura da imagem. */
+    height: 90px; /* Reduz a altura da imagem. */
   }
 
+  /* Reduz o título do produto no carrinho. */
   .item h2 {
-    font-size: 15px;
+    font-size: 15px; /* Ajusta o tamanho do nome para telas menores. */
   }
 
+  /* Reduz o texto do controle de remoção. */
   .remover {
-    font-size: 11px;
+    font-size: 11px; /* Ajusta o tamanho do texto para telas menores. */
   }
 }

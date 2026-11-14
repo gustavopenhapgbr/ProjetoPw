@@ -1,128 +1,155 @@
+/* Faz o conteúdo da página ocupar o espaço disponível até o rodapé. */
 .conteudo-principal {
-  flex: 1;
+  flex: 1; /* Expande a área principal dentro do layout flex da página. */
 }
 
+/* Estiliza a área de título da página de produtos. */
 .titulo {
-  padding: 45px 20px;
-  background: #fafafa;
-  text-align: center;
+  padding: 45px 20px; /* Define espaçamento interno vertical e lateral. */
+  background: #fafafa; /* Define o fundo claro do título. */
+  text-align: center; /* Centraliza o texto do título. */
 }
 
+/* Estiliza o título principal da página de produtos. */
 .titulo h1 {
-  font-size: 38px;
-  color: #201927;
-  font-weight: 500;
+  font-size: 38px; /* Define o tamanho do título. */
+  color: #201927; /* Define a cor do título. */
+  font-weight: 500; /* Define uma espessura intermediária para o texto. */
 }
 
+/* Estiliza o texto abaixo do título. */
 .titulo p {
-  margin-top: 10px;
-  color: #817987;
+  margin-top: 10px; /* Afasta o parágrafo do título. */
+  color: #817987; /* Exibe o texto em cinza arroxeado. */
 }
 
+/* Define a largura e o espaçamento da listagem de produtos. */
 .produtos {
-  max-width: 1200px;
-  margin: auto;
-  padding: 35px 20px 65px;
+  max-width: 1200px; /* Limita a largura da listagem em telas grandes. */
+  margin: auto; /* Centraliza a listagem horizontalmente. */
+  padding: 35px 20px 65px; /* Define espaçamento interno: topo, laterais e base. */
 }
 
+/* Apresenta um aviso quando a busca não encontra produtos. */
+.sem-resultados {
+  margin: 0 0 30px; /* Afasta a mensagem da lista de produtos. */
+  padding: 24px; /* Cria espaço interno para a mensagem. */
+  border: 1px solid #dedede; /* Delimita o aviso de busca sem resultados. */
+  border-radius: 12px; /* Arredonda os cantos do aviso. */
+  background: #fff; /* Destaca o aviso sobre o fundo da página. */
+  color: #555; /* Mantém o texto do aviso em cinza escuro. */
+  text-align: center; /* Centraliza o texto da mensagem. */
+}
+
+/* Espaça e posiciona cada grupo de produtos por categoria. */
 .grupo-categoria {
-  margin-bottom: 34px;
-  scroll-margin-top: 15px;
+  margin-bottom: 34px; /* Afasta este grupo do grupo seguinte. */
+  scroll-margin-top: 15px; /* Adiciona espaço acima quando a página rola até a categoria. */
 }
 
+/* Estiliza os títulos dos grupos de categoria. */
 .grupo-categoria h2 {
-  margin: 24px 0 18px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  color: #42146d;
-  font-size: 23px;
+  margin: 24px 0 18px; /* Define espaço acima e abaixo do título. */
+  padding-bottom: 10px; /* Afasta o texto da borda inferior. */
+  border-bottom: 1px solid #ddd; /* Desenha um separador sob o título. */
+  color: #42146d; /* Exibe o título em roxo. */
+  font-size: 23px; /* Define o tamanho do título da categoria. */
 }
 
+/* Quando uma categoria é alvo de navegação, esconde os outros grupos. */
 body:has(.grupo-categoria:target) .grupo-categoria:not(:target) {
-  display: none;
+  display: none; /* Oculta os grupos que não correspondem à categoria selecionada na URL. */
 }
 
+/* Organiza os cartões de produto em uma grade adaptável. */
 .grade {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
+  display: grid; /* Ativa o layout de grade para os cartões. */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Cria colunas adaptáveis com no mínimo 220px. */
+  gap: 22px; /* Define o espaço entre os cartões. */
 }
 
+/* Define a estrutura e a aparência do cartão de produto. */
 .card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid #dedede;
-  border-radius: 14px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.06);
-  transition: transform .2s ease, box-shadow .2s ease;
+  display: flex; /* Ativa o layout flex dentro do cartão. */
+  flex-direction: column; /* Empilha imagem, nome, preço e ação. */
+  min-width: 0; /* Permite que o cartão encolha dentro da grade. */
+  overflow: hidden; /* Recorta o conteúdo que ultrapasse os cantos arredondados. */
+  background: #fff; /* Define o fundo branco do cartão. */
+  border: 1px solid #dedede; /* Desenha uma borda cinza-clara. */
+  border-radius: 14px; /* Arredonda os cantos do cartão. */
+  box-shadow: 0 5px 15px rgba(0,0,0,.06); /* Adiciona uma sombra discreta ao cartão. */
+  transition: transform .2s ease, box-shadow .2s ease; /* Suaviza mudanças de posição e sombra. */
 }
 
+/* Eleva visualmente o cartão quando o cursor passa sobre ele. */
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  transform: translateY(-3px); /* Move o cartão alguns pixels para cima. */
+  box-shadow: 0 10px 24px rgba(0,0,0,.12); /* Aumenta a sombra para destacar o cartão. */
 }
 
+/* Define as dimensões da imagem dentro do cartão. */
 .card img {
-  width: 100%;
-  height: 230px;
-  padding: 12px;
-  background: #f2f2f2;
+  width: 100%; /* Faz a imagem ocupar toda a largura do cartão. */
+  height: 230px; /* Define a altura da imagem. */
+  padding: 12px; /* Cria espaço interno ao redor da imagem. */
+  background: #f2f2f2; /* Define um fundo cinza-claro para a área da imagem. */
 }
 
+/* Estiliza o nome do produto no cartão. */
 .card h3 {
-  flex: 1;
-  margin: 16px 16px 8px;
-  font-size: 16px;
-  line-height: 1.35;
+  flex: 1; /* Faz a área do nome crescer e ajuda a alinhar as ações dos cartões. */
+  margin: 16px 16px 8px; /* Define espaço ao redor do nome. */
+  font-size: 16px; /* Define o tamanho do nome do produto. */
+  line-height: 1.35; /* Ajusta o espaço entre as linhas do nome. */
 }
 
+/* Estiliza o preço do produto no cartão. */
 .card p {
-  margin: 0 16px 14px;
-  color: #42146d;
-  font-size: 17px;
-  font-weight: bold;
+  margin: 0 16px 14px; /* Define espaço nas laterais e abaixo do preço. */
+  color: #42146d; /* Exibe o preço em roxo. */
+  font-size: 17px; /* Define o tamanho do preço. */
+  font-weight: bold; /* Exibe o preço em negrito. */
 }
 
+/* Estiliza o rótulo de ação exibido no cartão. */
 .card span {
-  align-self: flex-start;
-  margin: 0 16px;
-  padding: 9px 14px;
-  border: 1px solid #42146d;
-  border-radius: 4px;
-  background: #42146d;
-  color: #fff;
-  font-size: 12px;
+  align-self: flex-start; /* Impede que o rótulo se estique por toda a largura. */
+  margin: 0 16px; /* Adiciona espaço lateral ao rótulo. */
+  padding: 9px 14px; /* Define espaçamento interno vertical e horizontal. */
+  border: 1px solid #42146d; /* Desenha uma borda roxa. */
+  border-radius: 4px; /* Arredonda levemente os cantos. */
+  background: #42146d; /* Define o fundo roxo do rótulo. */
+  color: #fff; /* Define o texto branco do rótulo. */
+  font-size: 12px; /* Define o tamanho do texto. */
 }
 
+/* Ajusta a listagem e os cartões para telas estreitas. */
 @media (max-width: 650px) {
   .produtos {
-    padding: 25px 14px 45px;
+    padding: 25px 14px 45px; /* Reduz o espaçamento interno da listagem. */
   }
 
   .grade {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Exibe duas colunas que podem encolher igualmente. */
+    gap: 12px; /* Reduz o espaço entre os cartões. */
   }
 
   .card img {
-    height: 170px;
-    padding: 8px;
+    height: 170px; /* Reduz a altura das imagens dos cartões. */
+    padding: 8px; /* Reduz o espaço interno ao redor das imagens. */
   }
 
   .card h3 {
-    margin: 12px 12px 7px;
-    font-size: 14px;
+    margin: 12px 12px 7px; /* Reduz o espaço ao redor do nome. */
+    font-size: 14px; /* Reduz o tamanho do nome do produto. */
   }
 
   .card p {
-    margin: 0 12px 12px;
-    font-size: 15px;
+    margin: 0 12px 12px; /* Reduz o espaço ao redor do preço. */
+    font-size: 15px; /* Reduz o tamanho do preço. */
   }
 
   .card span {
-    margin: 0 12px;
+    margin: 0 12px; /* Ajusta as margens laterais do rótulo de ação. */
   }
 }

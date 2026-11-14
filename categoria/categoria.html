@@ -15,7 +15,7 @@
         F.Company
       </a>
       <form class="busca" action="../produto/produto.html">
-        <input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
+        <input type="search" name="busca" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
         <button type="submit" aria-label="Pesquisar">
           ⌕
         </button>
@@ -27,21 +27,20 @@
         <a href="../carrinho/carrinho.html" aria-label="Carrinho">
           <img class="icone" src="../imagens/carrinho.png" alt="">
         </a>
-        <a href="../login/login.html" aria-label="Minha conta">
-          <img class="icone" src="../imagens/usuario.png" alt="">
-        </a>
+        <div class="menu-usuario">
+          <a href="../login/login.html" aria-label="Minha conta">
+            <img class="icone" src="../imagens/usuario.png" alt="">
+          </a>
+          <div class="dropdown-usuario" id="dropdown-usuario"></div>
+        </div>
       </div>
     </div>
     <nav class="menu">
-      <a href="../home/index.html">
-        Início
-      </a>
-      <a href="categoria.html">
-        Categorias
-      </a>
-      <a href="../produto/produto.html">
-        Produtos
-      </a>
+      <a href="../produto/produto.html#camisetas">Camisetas</a>
+      <a href="../produto/produto.html#calcas">Calças</a>
+      <a href="../produto/produto.html#shorts">Shorts</a>
+      <a href="../produto/produto.html#conjuntos">Conjuntos</a>
+      <a href="../produto/produto.html#acessorios">Acessórios</a>
     </nav>
     <div class="conteudo-principal">
       <div class="titulo">
@@ -145,5 +144,6 @@
         </form>
       </div>
     </div>
+    <script src="../usuario.js"></script>
   </body>
 </html>

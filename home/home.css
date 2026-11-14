@@ -1,172 +1,201 @@
+/* Faz o conteúdo da página ocupar o espaço disponível até o rodapé. */
 .conteudo-principal { flex: 1; }
 
+/* Define a área e o tamanho do banner principal. */
 .banner {
-  width: 100%;
-  height: 390px;
-  overflow: hidden;
+  width: 100%; /* Faz o banner ocupar toda a largura disponível. */
+  height: 390px; /* Define a altura do banner. */
+  overflow: hidden; /* Esconde partes da imagem que ultrapassem a área do banner. */
 }
 
+/* Ajusta a imagem para preencher o banner. */
 .banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%; /* Faz a imagem ocupar toda a largura do banner. */
+  height: 100%; /* Faz a imagem ocupar toda a altura do banner. */
+  object-fit: cover; /* Preenche o banner cortando o excesso sem distorcer a imagem. */
+  display: block; /* Remove o espaço extra de linha de uma imagem inline. */
 }
 
+/* Organiza os benefícios da loja em uma linha centralizada. */
 .beneficios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
-  height: 90px;
+  display: flex; /* Organiza os itens de benefício em uma linha. */
+  align-items: center; /* Alinha os itens verticalmente ao centro. */
+  justify-content: center; /* Centraliza o conjunto de benefícios horizontalmente. */
+  gap: 120px; /* Define o espaço entre os benefícios. */
+  height: 90px; /* Define a altura da faixa de benefícios. */
 }
 
+/* Define a largura e o alinhamento de cada benefício. */
 .beneficios div {
-  width: 100px;
-  text-align: center;
+  width: 100px; /* Reserva uma largura para cada benefício. */
+  text-align: center; /* Centraliza o conteúdo do benefício. */
 }
 
+/* Define o tamanho dos ícones de benefício. */
 .beneficios img {
-  width: 45px;
-  height: 45px;
+  width: 45px; /* Define a largura do ícone. */
+  height: 45px; /* Define a altura do ícone. */
+  margin: 0 auto; /* Centraliza o ícone sobre o texto do benefício. */
 }
 
+/* Define o tamanho dos textos de benefício. */
 .beneficios p {
-  font-size: 9px;
+  font-size: 9px; /* Exibe o texto em tamanho reduzido. */
 }
 
+/* Estiliza a faixa de chamadas promocionais. */
 .faixa {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 38px;
-  background: #000;
-  color: #fff;
+  display: flex; /* Organiza os conteúdos da faixa em uma linha. */
+  align-items: center; /* Alinha verticalmente os conteúdos. */
+  justify-content: space-around; /* Distribui as imagens e mensagens por toda a faixa. */
+  height: 38px; /* Define a altura da faixa. */
+  background: #000; /* Define o fundo preto da faixa. */
+  color: #fff; /* Define o texto branco da faixa. */
 }
 
+/* Posiciona e dimensiona as imagens decorativas da faixa. */
 .faixa img {
-  width: 60px;
-  height: 60px;
-  margin-top: -25px;
+  width: 60px; /* Define a largura da imagem. */
+  height: 60px; /* Define a altura da imagem. */
+  margin-top: -25px; /* Move a imagem para cima, parcialmente para fora da faixa. */
 }
 
+/* Estiliza o texto da faixa promocional. */
 .faixa span {
-  font-size: 9px;
-  font-weight: bold;
+  font-size: 9px; /* Define o tamanho do texto. */
+  font-weight: bold; /* Exibe o texto em negrito. */
 }
 
+/* Define o espaçamento e alinhamento da seção de destaques. */
 .destaques {
-  padding: 65px 20px;
-  background: #fafafa;
-  text-align: center;
+  padding: 65px 20px; /* Define espaçamento interno vertical e lateral. */
+  background: #fafafa; /* Define o fundo claro da seção. */
+  text-align: center; /* Centraliza o texto da seção. */
 }
 
+/* Estiliza o título da seção de destaques com tamanho adaptável. */
 .destaques h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  color: #201927;
-  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Ajusta o tamanho entre 2rem e 3.5rem conforme a largura da tela. */
+  color: #201927; /* Define a cor do título. */
+  font-weight: 500; /* Define uma espessura intermediária para o texto. */
 }
 
+/* Estiliza e espaça o subtítulo dos destaques. */
 .subtitulo {
-  margin: 12px 0 30px;
-  color: #817987;
+  margin: 12px 0 30px; /* Define espaço acima e abaixo do subtítulo. */
+  color: #817987; /* Exibe o subtítulo em cinza arroxeado. */
 }
 
+/* Organiza os produtos em uma grade que se adapta à largura disponível. */
 .grade {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 22px;
-  max-width: 1200px;
-  margin: auto;
-  text-align: left;
+  display: grid; /* Ativa o layout de grade para os cartões de produto. */
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Cria colunas adaptáveis com no mínimo 190px. */
+  gap: 22px; /* Define o espaço entre os cartões. */
+  max-width: 1200px; /* Limita a largura total da grade. */
+  margin: auto; /* Centraliza a grade na página. */
+  text-align: left; /* Alinha o texto dos cartões à esquerda. */
 }
 
+/* Afasta o botão que aparece depois dos cartões de destaque. */
 .destaques > .botao {
-  margin-top: 30px;
+  margin-top: 30px; /* Adiciona espaço acima do botão. */
 }
 
+/* Define o visual do cartão de produto. */
 .card {
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid #dedede;
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0,0,0,.08);
+  overflow: hidden; /* Recorta o conteúdo que ultrapasse os cantos arredondados. */
+  background: #fff; /* Define o fundo branco do cartão. */
+  border: 1px solid #dedede; /* Desenha uma borda cinza-clara. */
+  border-radius: 14px; /* Arredonda os cantos do cartão. */
+  box-shadow: 0 6px 15px rgba(0,0,0,.08); /* Adiciona uma sombra discreta ao cartão. */
 }
 
+/* Define o tamanho e o recorte da imagem do produto no cartão. */
 .card img {
-  width: 100%;
-  height: 200px;
-  background: #dedede;
-  object-fit: cover;
+  width: 100%; /* Faz a imagem ocupar toda a largura do cartão. */
+  height: 200px; /* Define a altura da imagem. */
+  background: #dedede; /* Define um fundo cinza para a área da imagem. */
+  object-fit: cover; /* Preenche a área cortando o excesso sem distorcer a imagem. */
 }
 
+/* Estiliza o nome do produto no cartão. */
 .card h2 {
-  margin: 14px 14px 8px;
-  font-size: 16px;
+  margin: 14px 14px 8px; /* Define espaço ao redor do nome. */
+  font-size: 16px; /* Define o tamanho do nome do produto. */
 }
 
+/* Destaca o preço do produto no cartão. */
 .card strong {
-  display: block;
-  margin: 0 14px;
-  color: #42146d;
+  display: block; /* Coloca o preço em uma linha própria. */
+  margin: 0 14px; /* Adiciona espaço nas laterais do preço. */
+  color: #42146d; /* Exibe o preço em roxo. */
 }
 
+/* Define o espaçamento e alinhamento da seção de depoimentos. */
 .depoimentos {
-  padding: 45px 8%;
-  background: #fafafa;
-  text-align: center;
+  padding: 45px 8%; /* Define espaçamento interno vertical e lateral. */
+  background: #fafafa; /* Define o fundo claro da seção. */
+  text-align: center; /* Centraliza o conteúdo da seção. */
 }
 
+/* Estiliza o título dos depoimentos. */
 .depoimentos h2 {
-  margin-bottom: 10px;
-  font-size: 25px;
+  margin-bottom: 10px; /* Afasta o título do texto seguinte. */
+  font-size: 25px; /* Define o tamanho do título. */
 }
 
+/* Define o tamanho do texto introdutório dos depoimentos. */
 .depoimentos > p {
-  font-size: 13px;
+  font-size: 13px; /* Define o tamanho do parágrafo direto da seção. */
 }
 
+/* Organiza os cartões de avaliação e permite que quebrem de linha. */
 .avaliacoes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 28px;
+  display: flex; /* Organiza os cartões de avaliação em uma linha flexível. */
+  flex-wrap: wrap; /* Permite que os cartões passem para novas linhas. */
+  justify-content: center; /* Centraliza os cartões horizontalmente. */
+  gap: 16px; /* Define o espaço entre os cartões. */
+  margin-top: 28px; /* Afasta os cartões do texto introdutório. */
 }
 
+/* Define a aparência de cada cartão de avaliação. */
 .avaliacoes article {
-  width: 250px;
-  padding: 18px;
-  background: #f5f5f5;
-  border: 1px solid #36454f;
-  border-radius: 12px;
+  width: 250px; /* Define a largura do cartão. */
+  padding: 18px; /* Adiciona espaço interno ao cartão. */
+  background: #f5f5f5; /* Define o fundo cinza-claro do cartão. */
+  border: 1px solid #36454f; /* Desenha uma borda em tom azul-acinzentado. */
+  border-radius: 12px; /* Arredonda os cantos do cartão. */
 }
 
+/* Colore as estrelas da avaliação. */
 .avaliacoes span {
-  color: goldenrod;
+  color: goldenrod; /* Exibe as estrelas em dourado. */
 }
 
+/* Estiliza o texto de cada avaliação. */
 .avaliacoes p {
-  margin: 12px 0;
-  font-size: 12px;
-  line-height: 1.5;
+  margin: 12px 0; /* Define espaço acima e abaixo do texto. */
+  font-size: 12px; /* Define o tamanho do texto da avaliação. */
+  line-height: 1.5; /* Ajusta o espaço entre as linhas. */
 }
 
+/* Define a cor do nome ou identificação de quem avaliou. */
 .avaliacoes small {
-  color: #36454f;
+  color: #36454f; /* Exibe o texto em tom azul-acinzentado. */
 }
 
+/* Ajusta alguns elementos da página inicial em telas estreitas. */
 @media (max-width: 650px) {
   .beneficios {
-    gap: 15px;
+    gap: 15px; /* Reduz o espaço entre os benefícios. */
   }
 
   .faixa img {
-    width: 40px;
-    height: 40px;
+    width: 40px; /* Reduz a largura da imagem da faixa. */
+    height: 40px; /* Reduz a altura da imagem da faixa. */
   }
 
   .faixa span {
-    font-size: 7px;
+    font-size: 7px; /* Reduz o texto da faixa para caber em telas estreitas. */
   }
 }

@@ -15,7 +15,7 @@
         F.Company
       </a>
       <form class="busca" action="produto.html">
-        <input type="search" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
+        <input type="search" name="busca" placeholder="Pesquisar produto" aria-label="Pesquisar produto">
         <button type="submit" aria-label="Pesquisar">
           ⌕
         </button>
@@ -27,32 +27,32 @@
         <a href="../carrinho/carrinho.html" aria-label="Carrinho">
           <img class="icone" src="../imagens/carrinho.png" alt="">
         </a>
-        <a href="../login/login.html" aria-label="Minha conta">
-          <img class="icone" src="../imagens/usuario.png" alt="">
-        </a>
+        <div class="menu-usuario">
+          <a href="../login/login.html" aria-label="Minha conta">
+            <img class="icone" src="../imagens/usuario.png" alt="">
+          </a>
+          <div class="dropdown-usuario" id="dropdown-usuario"></div>
+        </div>
       </div>
     </div>
     <nav class="menu">
-      <a href="../home/index.html">
-        Início
-      </a>
-      <a href="../categoria/categoria.html">
-        Categorias
-      </a>
-      <a href="produto.html">
-        Produtos
-      </a>
+      <a href="produto.html#camisetas">Camisetas</a>
+      <a href="produto.html#calcas">Calças</a>
+      <a href="produto.html#shorts">Shorts</a>
+      <a href="produto.html#conjuntos">Conjuntos</a>
+      <a href="produto.html#acessorios">Acessórios</a>
     </nav>
     <div class="conteudo-principal">
       <div class="titulo">
-        <h1>
+        <h1 id="titulo-produtos">
           Nossos produtos
         </h1>
-        <p>
+        <p id="descricao-produtos">
           Encontre seu próximo look F.Company.
         </p>
       </div>
       <div class="produtos">
+        <p id="sem-resultados" class="sem-resultados" hidden></p>
         <div class="grupo-categoria" id="camisetas">
           <h2>Camisetas</h2>
           <div class="grade"></div>
@@ -137,5 +137,6 @@
     </div>
     <script src="../produtos.js"></script>
     <script src="produto.js"></script>
+    <script src="../usuario.js"></script>
   </body>
 </html>

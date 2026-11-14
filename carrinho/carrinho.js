@@ -145,5 +145,18 @@ function limparCarrinho() { // Apaga todos os produtos salvos no carrinho.
     mostrarCarrinho(); // Atualiza a tela para mostrar o estado vazio.
 } // Fecha a função de limpeza.
 
+// Confirma a compra e remove os produtos do carrinho.
+function finalizarCompra() { // Finaliza a compra dos itens salvos.
+    var carrinho = JSON.parse(localStorage.getItem("carrinho")) || []; // Lê os itens salvos ou inicia uma lista vazia.
+
+    if (carrinho.length === 0) { // Impede finalizar uma compra sem produtos.
+        alert("Seu carrinho está vazio."); // Informa que não há itens para comprar.
+        return; // Interrompe a finalização.
+    } // Fecha a verificação de carrinho vazio.
+
+    alert("Compra efetuada com sucesso!"); // Confirma a compra antes de limpar o carrinho.
+    limparCarrinho(); // Remove os itens após a confirmação.
+} // Fecha a função de finalização.
+
 // Executa a renderização ao carregar a página.
 mostrarCarrinho(); // Desenha o carrinho assim que o arquivo é carregado.

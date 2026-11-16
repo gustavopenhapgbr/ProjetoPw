@@ -1,113 +1,98 @@
-/* Centraliza o conteúdo de login na área principal da página. */
 .conteudo-principal {
-  display: grid; /* Ativa a grade para centralizar o formulário. */
-  place-items: center; /* Centraliza o formulário horizontal e verticalmente. */
-  flex: 1; /* Ocupa o espaço livre entre o cabeçalho e o rodapé. */
-  padding: 42px 16px; /* Define espaçamento interno vertical e lateral. */
+  display: grid;
+  place-items: center;
+  flex: 1;
+  padding: 42px 16px;
 }
 
-/* Organiza e estiliza o formulário de login. */
 .formulario {
-  display: flex; /* Ativa o layout flex para os campos e textos do formulário. */
-  flex-direction: column; /* Empilha os elementos do formulário verticalmente. */
-  width: 100%; /* Permite que o formulário use a largura disponível. */
-  max-width: 380px; /* Limita a largura do formulário em telas grandes. */
-  padding: 30px 28px; /* Define espaçamento interno vertical e lateral. */
-  background: #423a3a; /* Define o fundo escuro do formulário. */
-  color: #eee; /* Define a cor clara dos textos do formulário. */
-  border: 1px solid #42146d; /* Desenha uma borda roxa fina. */
-  border-radius: 14px; /* Arredonda os cantos do formulário. */
-  box-shadow: 0 8px 30px rgba(191, 6, 207, 0.35); /* Adiciona uma sombra roxa ao redor. */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 28px;
+  background: #423a3a;
+  color: #eee;
+  border: 1px solid #42146d;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(191, 6, 207, 0.35);
 }
 
-/* Define o tamanho e o posicionamento da imagem do mascote. */
 .mascote {
-  width: 110px; /* Define a largura do mascote. */
-  height: 90px; /* Define a altura do mascote. */
-  margin: 0 auto 12px; /* Centraliza o mascote e adiciona espaço abaixo. */
+  width: 110px;
+  height: 90px;
+  margin: 0 auto 12px;
 }
 
-/* Centraliza o conteúdo dos elementos indicados. */
 .formulario h1,
 .introducao,
 .cadastro {
-  text-align: center; /* Alinha o texto ao centro. */
+  text-align: center;
 }
 
-/* Define o tamanho do título do formulário. */
 .formulario h1 {
-  font-size: 22px; /* Define o tamanho do título. */
+  font-size: 22px;
 }
 
-/* Ajusta o texto introdutório abaixo do título. */
 .introducao {
-  margin: 6px 0 24px; /* Define espaço acima e abaixo do texto. */
-  font-size: 14px; /* Define o tamanho do texto introdutório. */
+  margin: 6px 0 24px;
+  font-size: 14px;
 }
 
-/* Estiliza os rótulos dos campos do formulário. */
 .formulario label {
-  margin-bottom: 6px; /* Afasta cada rótulo do campo correspondente. */
-  font-size: 13px; /* Define o tamanho do rótulo. */
-  font-weight: 600; /* Dá destaque ao rótulo. */
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
-/* Estiliza os campos de entrada do formulário. */
 .formulario input {
-  height: 44px; /* Define a altura dos campos. */
-  margin-bottom: 18px; /* Adiciona espaço abaixo de cada campo. */
-  padding: 0 14px; /* Define espaçamento interno nas laterais. */
-  border: 1px solid #ccc; /* Desenha uma borda cinza-clara. */
-  border-radius: 8px; /* Arredonda os cantos dos campos. */
-  outline: none; /* Remove o contorno padrão do navegador. */
-  font-size: 14px; /* Define o tamanho do texto nos campos. */
+  height: 44px;
+  margin-bottom: 18px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
 }
 
-/* Destaca o campo que está selecionado para digitação. */
 .formulario input:focus {
-  border-color: #42146d; /* Muda a borda do campo focado para roxo. */
-  box-shadow: 0 0 0 3px rgba(66, 20, 109, 0.25); /* Cria um realce roxo ao redor do campo. */
+  border-color: #42146d;
+  box-shadow: 0 0 0 3px rgba(66, 20, 109, 0.25);
 }
 
-/* Alinha o rótulo da senha e o link de recuperação. */
 .linha-senha {
-  display: flex; /* Coloca os elementos da linha lado a lado. */
-  align-items: baseline; /* Alinha os elementos pela base do texto. */
-  justify-content: space-between; /* Encosta os elementos em lados opostos. */
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-/* Estiliza o link de recuperação de senha. */
 .linha-senha a {
-  color: #eee; /* Exibe o link em cinza-claro. */
-  font-size: 12px; /* Define o tamanho do link. */
-  font-weight: 600; /* Dá destaque ao link. */
+  color: #eee;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-/* Estiliza o botão principal do formulário. */
 .botao {
-  height: 46px; /* Define a altura do botão. */
-  border: 0; /* Remove a borda padrão do botão. */
-  border-radius: 8px; /* Arredonda os cantos do botão. */
-  background: #42146d; /* Define o fundo roxo do botão. */
-  color: #fff; /* Define o texto branco do botão. */
-  font-size: 15px; /* Define o tamanho do texto do botão. */
-  font-weight: 600; /* Dá destaque ao texto do botão. */
+  height: 46px;
+  border: 0;
+  border-radius: 8px;
+  background: #42146d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-/* Altera a cor do botão quando o cursor passa sobre ele. */
 .botao:hover {
-  background: #5b397a; /* Exibe um roxo mais claro durante o hover. */
+  background: #5b397a;
 }
 
-/* Ajusta o texto e o espaço do link para criar uma conta. */
 .cadastro {
-  margin-top: 20px; /* Afasta o texto do botão acima. */
-  font-size: 13px; /* Define o tamanho do texto. */
+  margin-top: 20px;
+  font-size: 13px;
 }
 
-/* Destaca visualmente o link dentro do texto de cadastro. */
 .cadastro a {
-  color: #fff; /* Exibe o link em branco. */
-  text-decoration: underline; /* Sublinha o link. */
-  font-weight: bold; /* Exibe o link em negrito. */
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
 }

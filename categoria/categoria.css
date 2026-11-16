@@ -1,70 +1,61 @@
-/* Faz o conteúdo da página ocupar o espaço disponível até o rodapé. */
 .conteudo-principal {
-  flex: 1; /* Expande a área principal dentro do layout flex da página. */
+  flex: 1;
 }
 
-/* Estiliza o cabeçalho da página de categorias. */
 .titulo {
-  padding: 55px 20px; /* Define espaçamento interno vertical e lateral. */
-  background: #fafafa; /* Define o fundo claro do cabeçalho. */
-  text-align: center; /* Centraliza o texto do cabeçalho. */
+  padding: 55px 20px;
+  background: #fafafa;
+  text-align: center;
 }
 
-/* Estiliza o título da página de categorias. */
 .titulo h1 {
-  font-size: 42px; /* Define o tamanho do título. */
-  color: #201927; /* Define a cor do título. */
-  font-weight: 500; /* Define uma espessura intermediária para o texto. */
+  font-size: 42px;
+  color: #201927;
+  font-weight: 500;
 }
 
-/* Estiliza o parágrafo abaixo do título. */
 .titulo p {
-  margin-top: 12px; /* Afasta o parágrafo do título. */
-  color: #817987; /* Exibe o texto em cinza arroxeado. */
+  margin-top: 12px;
+  color: #817987;
 }
 
-/* Organiza os cartões de categoria em uma grade adaptável. */
 .categorias {
-  display: grid; /* Ativa o layout de grade para os cartões. */
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Cria colunas adaptáveis com no mínimo 190px. */
-  gap: 22px; /* Define o espaço entre os cartões. */
-  max-width: 1200px; /* Limita a largura total da grade. */
-  margin: auto; /* Centraliza a grade dentro da página. */
-  padding: 40px 20px 70px; /* Define espaçamento interno: topo, laterais e base. */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 22px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 70px;
 }
 
-/* Define o visual e o recorte de cada link de categoria. */
 .categorias a {
-  overflow: hidden; /* Recorta o conteúdo que ultrapasse os cantos arredondados. */
-  background: #fff; /* Define o fundo branco do cartão. */
-  border: 1px solid #ddd; /* Desenha uma borda cinza-clara. */
-  border-radius: 14px; /* Arredonda os cantos do cartão. */
-  text-align: center; /* Centraliza o texto dentro do cartão. */
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  text-align: center;
 }
 
-/* Define o tamanho e o recorte das imagens de categoria. */
 .categorias img {
-  width: 100%; /* Faz a imagem ocupar toda a largura do cartão. */
-  height: 220px; /* Define a altura da imagem. */
-  background: #eee; /* Define um fundo cinza para a área da imagem. */
-  object-fit: cover; /* Preenche a área cortando o excesso sem distorcer a imagem. */
+  width: 100%;
+  height: 220px;
+  background: #eee;
+  object-fit: cover;
 }
 
-/* Estiliza os nomes das categorias. */
 .categorias h2 {
-  padding: 16px; /* Adiciona espaço interno ao redor do nome. */
-  color: #42146d; /* Exibe o nome da categoria em roxo. */
-  font-size: 18px; /* Define o tamanho do nome da categoria. */
+  padding: 16px;
+  color: #42146d;
+  font-size: 18px;
 }
 
-/* Ajusta a grade de categorias para telas estreitas. */
 @media (max-width: 650px) {
   .categorias {
-    grid-template-columns: repeat(2, 1fr); /* Exibe duas colunas de mesma largura. */
-    padding: 25px 14px 45px; /* Reduz o espaçamento interno da grade. */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 14px 45px;
   }
 
   .categorias img {
-    height: 160px; /* Reduz a altura das imagens em telas estreitas. */
+    height: 160px;
   }
 }

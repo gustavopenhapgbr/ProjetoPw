@@ -1,120 +1,104 @@
-/* Área que contém o conteúdo principal da página de detalhes. */
 .conteudo-principal {
-  width: 100%; /* Ocupa toda a largura disponível. */
-  max-width: 1050px; /* Impede que o conteúdo fique largo demais em telas grandes. */
-  margin: 0 auto; /* Centraliza horizontalmente quando há espaço sobrando. */
-  flex: 1; /* Permite que a área cresça para ocupar o espaço livre do layout flex. */
-  padding: 35px 20px 65px; /* Define espaçamento interno: topo, laterais e base. */
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  flex: 1;
+  padding: 35px 20px 65px;
 }
 
-/* Estilo do link para voltar à lista de produtos. */
 .voltar {
-  display: inline-block; /* Permite aplicar dimensões e margens sem ocupar a linha toda. */
-  margin-bottom: 25px; /* Afasta o link do conteúdo abaixo. */
-  color: #666; /* Exibe o texto em cinza. */
-  font-size: 13px; /* Define o tamanho do texto. */
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 13px;
 }
 
-/* Organiza a imagem e os detalhes do produto em uma grade. */
 .produto {
-  display: grid; /* Ativa o layout de grade para os elementos filhos. */
-  grid-template-columns: 1fr 1fr; /* Cria duas colunas de mesma proporção. */
-  align-items: start; /* Alinha os elementos ao início vertical da grade. */
-  gap: 45px; /* Define o espaço entre as colunas. */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 45px;
 }
 
-/* Define a apresentação da imagem do produto. */
 .foto {
-  width: 100%; /* Faz a imagem ocupar toda a largura da coluna. */
-  max-height: 520px; /* Limita a altura máxima da imagem. */
-  background: #eee; /* Mostra um fundo cinza enquanto a imagem não preenche a área. */
-  border-radius: 12px; /* Arredonda os cantos da imagem. */
-  object-fit: cover; /* Preenche a área cortando o excesso sem distorcer a imagem. */
+  width: 100%;
+  max-height: 520px;
+  background: #eee;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
-/* Estiliza a categoria exibida dentro da seção de detalhes. */
 .detalhes .categoria {
-  color: #42146d; /* Exibe a categoria em roxo. */
-  font-size: 13px; /* Define o tamanho do texto da categoria. */
-  text-transform: uppercase; /* Transforma as letras em maiúsculas visualmente. */
+  color: #42146d;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
-/* Estiliza o título principal do produto dentro dos detalhes. */
 .detalhes h1 {
-  margin: 12px 0; /* Adiciona espaço acima e abaixo, sem margem lateral. */
-  font-size: 32px; /* Define o tamanho do título. */
+  margin: 12px 0;
+  font-size: 32px;
 }
 
-/* Estiliza o preço do produto dentro dos detalhes. */
 .detalhes .preco {
-  margin: 15px 0; /* Adiciona espaço acima e abaixo do preço. */
-  font-size: 24px; /* Deixa o preço maior que o texto comum. */
-  font-weight: bold; /* Exibe o preço em negrito. */
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Estiliza os parágrafos que são filhos diretos da seção de detalhes. */
 .detalhes > p {
-  color: #555; /* Exibe os textos dos parágrafos em cinza escuro. */
-  line-height: 1.6; /* Aumenta o espaço entre as linhas para facilitar a leitura. */
+  color: #555;
+  line-height: 1.6;
 }
 
-/* Estiliza os subtítulos da seção de detalhes. */
 .detalhes h2 {
-  margin: 24px 0 12px; /* Define espaço acima e abaixo do subtítulo. */
-  font-size: 17px; /* Define o tamanho do subtítulo. */
+  margin: 24px 0 12px;
+  font-size: 17px;
 }
 
-/* Estiliza a linha horizontal que separa partes dos detalhes. */
 .detalhes hr {
-  margin: 22px 0; /* Adiciona espaço acima e abaixo da linha. */
-  border: 0; /* Remove a borda padrão do elemento. */
-  border-top: 1px solid #ddd; /* Desenha uma linha superior fina e cinza-clara. */
+  margin: 22px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
 }
 
-/* Organiza as opções de tamanho em uma linha. */
 .tamanhos {
-  display: flex; /* Coloca os tamanhos lado a lado. */
-  gap: 10px; /* Define o espaço entre as opções de tamanho. */
+  display: flex;
+  gap: 10px;
 }
 
-/* Define a aparência de cada opção de tamanho. */
 .tamanhos span {
-  min-width: 42px; /* Garante uma largura mínima para cada opção. */
-  padding: 10px; /* Cria espaço interno ao redor do texto. */
-  border: 1px solid #999; /* Desenha uma borda cinza ao redor da opção. */
-  text-align: center; /* Centraliza o texto dentro da opção. */
-  cursor: pointer; /* Indica que o tamanho pode ser selecionado. */
-  transition: background-color .15s, border-color .15s, color .15s; /* Suaviza os estados de interação. */
+  min-width: 42px;
+  padding: 10px;
+  border: 1px solid #999;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s, color .15s;
 }
 
 .tamanhos span:hover {
-  border-color: #42146d; /* Realça a opção sob o cursor. */
+  border-color: #42146d;
 }
 
 .tamanhos span.selecionado {
-  border-color: #42146d; /* Destaca a borda do tamanho escolhido. */
-  background: #42146d; /* Preenche a opção selecionada em roxo. */
-  color: #fff; /* Mantém o texto legível sobre o fundo roxo. */
+  border-color: #42146d;
+  background: #42146d;
+  color: #fff;
 }
 
-/* Define a apresentação do botão de adicionar ao carrinho. */
 .botao {
-  display: block; /* Faz o botão ocupar uma linha inteira. */
-  margin: 22px 0; /* Adiciona espaço acima e abaixo do botão. */
-  padding: 14px; /* Aumenta o espaço interno do botão. */
-  text-align: center; /* Centraliza o texto do botão. */
+  display: block;
+  margin: 22px 0;
+  padding: 14px;
+  text-align: center;
 }
 
-/* Aplica ajustes quando a tela tem até 650 pixels de largura. */
 @media (max-width: 650px) {
-  /* Reorganiza imagem e detalhes em uma coluna em telas menores. */
   .produto {
-    grid-template-columns: 1fr; /* Faz a grade ter apenas uma coluna. */
-    gap: 22px; /* Reduz o espaço entre imagem e detalhes. */
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
-  /* Reduz a altura máxima da imagem em telas menores. */
   .foto {
-    max-height: 360px; /* Evita que a imagem ocupe altura excessiva no celular. */
+    max-height: 360px;
   }
 }
